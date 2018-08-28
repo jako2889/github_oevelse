@@ -22,6 +22,11 @@
         .classbox1 {
             height: 3em;
         }
+
+        .classbox2 {
+            border: 2em;
+            border-radius: 100px;
+        }
     </style>
 
 </head>
@@ -41,27 +46,32 @@
         document.querySelector("#box1").style.backgroundColor="red";
         document.querySelector("#box1").style.transition="3s";
 
-        document.querySelector("#box2").addEventListener("click", changeBox2);
     }
+            document.querySelector("#box2").addEventListener("click", changeBox2);
 
     function changeBox2() {
+        document.querySelector("#box2").classList.add("classbox2");
+
          document.querySelector("#box2").style.backgroundColor="blue";
         document.querySelector("#box2").style.transition="3s";
 
-        document.querySelector("#box3").addEventListener("click", changeBox3);
+
     }
+            document.querySelector("#box3").addEventListener("click", changeBox3);
 
     function changeBox3() {
         document.querySelector("#box3").style.backgroundColor="green";
         document.querySelector("#box3").style.transition="3s";
 
-        document.querySelector("#box4").addEventListener("click", changeBox4);
+
     }
+                document.querySelector("#box4").addEventListener("click", changeBox4);
 
     function changeBox4() {
          document.querySelector("#box4").style.backgroundColor="black";
         document.querySelector("#box4").style.transition="3s";
     }
+
     </script>
 </body>
 
