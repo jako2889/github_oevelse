@@ -10,13 +10,21 @@
    <script>
 let længde=prompt("Angiv en længde:");
 let bredde=prompt("Angiv en bredde:");
+let besked;
 
-if(længde+bredde !=null && længde+bredde!="") {
-    alert("Arealet er "+længde*bredde);
-}else if(længde || bredde ==Number(NaN)) {
-    alert("kan ikke regne det ud");
+//if(længde+bredde !=null && længde+bredde!="") {
+//    alert("Arealet er "+længde*bredde);
+//}else if(længde || bredde ==Number(NaN)) {
+//    alert("kan ikke regne det ud");
+//}
+if(number(længde) && Number(bredde)) {
+    alert("længde: " + længde + " meter. Bredden: " + bredde + " meter. Arealet: " + længde*bredde + "kvadratmeter");
+}else{
+    alert("kan ikke regne det ud.")
 }
-
+if(confirm("Vil du starte forfra?")){
+    location.reload();
+}
    </script>
 
 </body>

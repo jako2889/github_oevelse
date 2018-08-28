@@ -9,15 +9,34 @@
 
 <body>
    <script>
-window.onload = arealBeregning;
+//window.onload = arealBeregning;
+//
+//    function arealBeregning(){
+//	let længde = prompt("Længde:");
+//    let bredde = prompt("bredde");
+//    let first = "Her er arealet:";
+//	return first + længde*bredde;
+//}
+function arealUdregning(l,w){
+    if(number(l) && number(w)){
+        return "areal: " + l * w;
 
-    function arealBeregning(){
-	let længde = prompt("Længde:");
-    let bredde = prompt("bredde");
-    let first = "Her er arealet:";
-	return first + længde*bredde;
+    }
+    else{
+        return "kan ikke regne det ud";
+    }
 }
 
+function brugerKontakt(){
+    let length = prompt("Længde?"),
+        width = prompt("Bredde?"),
+        besked = arealUdregning(length, width);
+    alert(besked);
+
+    if(confirm("Vil du starte forfra?")){
+        brugerKontakt();
+    }
+}
    </script>
 
 </body>
