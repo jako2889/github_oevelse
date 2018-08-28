@@ -19,6 +19,9 @@
             transition: all 1s;
         }
         /*********************/
+        .classbox1 {
+            height: 3em;
+        }
     </style>
 
 </head>
@@ -33,6 +36,8 @@
     document.querySelector("#box1").addEventListener("click", changeBox1);
 
     function changeBox1(){
+       document.querySelector("#box1").classList.add("classbox1");
+
         document.querySelector("#box1").style.backgroundColor="red";
         document.querySelector("#box1").style.transition="3s";
 
