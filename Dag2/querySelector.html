@@ -10,6 +10,17 @@
 <body>
   <button id="myBut">Klik</button>
    <script>
+document.addEventListener("DOMContentLoaded", start);
+
+function start(){
+    console.log("start");
+
+    myBut.addEventListener("click", doSomething);
+}
+
+function doSomething(){
+
+}
 const myBut = document.querySelector("#myBut");
        console.log(myBut);
 
